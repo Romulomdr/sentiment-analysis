@@ -17,11 +17,13 @@ reddit = praw.Reddit(
 )
 
 # Função para coletar comentários de uma postagem específica
-def get_reddit_comments(submission_id):
+def get_reddit_comments(submission_id, limit=100):
     submission = reddit.submission(id=submission_id)
-    submission.comments.replace_more(limit=100) 
+    submission.comments.replace_more(limit=None)
     comments = []
     for comment in submission.comments.list():
+        if len(comments) >= limit:
+            break
         comments.append(comment.body)
     return comments
 
@@ -31,6 +33,7 @@ comments = get_reddit_comments(submission_id)
 df_comments = pd.DataFrame(comments, columns=['comment'])
 df_comments.to_csv('reddit_comments.csv', index=False)
 
+# Necessário para tokenização
 nltk.download('punkt')
 nltk.download('stopwords')
 
@@ -38,6 +41,11 @@ nltk.download('stopwords')
 df_comments = pd.read_csv('reddit_comments.csv')
 
 # Função para limpar texto
+# 1º Todas as palavras minusculas 
+# 2º Remover pontuações 
+# 3º token em cada palavra 
+# 4º retirar palavras não alfabéticas
+# 5º remover stopwords(is, the, and)
 def clean_text(text):
     text = text.lower()
     text = text.translate(str.maketrans('', '', string.punctuation))
