@@ -6,6 +6,10 @@ O objetivo deste projeto é analisar se os usuários estão gostando ou não de 
 
 #### Abaixo segue as bibliotecas usadas juntamente com os links de suas respectivas documentações:
 
+```
+pip install praw pandas nltk vaderSentiment matplotlib seaborn
+```
+
 * [Praw](https://praw.readthedocs.io/en/stable/) - Uma biblioteca Python que permite interagir com a API do Reddit de forma fácil e intuitiva.
 * [Pandas](https://pandas.pydata.org/docs/user_guide/index.html) - Uma biblioteca de manipulação de dados que fornece estruturas de dados rápidas, flexíveis e expressivas, como DataFrames.
 * [NLTK](https://www.nltk.org/) - Biblioteca de toolkit para processamento de linguagem natural (NLP).
