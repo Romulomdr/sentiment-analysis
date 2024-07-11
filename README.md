@@ -17,6 +17,8 @@ pip install praw pandas nltk vaderSentiment matplotlib seaborn
 * [MatPlotLib](https://matplotlib.org/stable/index.html) - Uma biblioteca de plotagem em 2D que fornece uma interface para criar gráficos e visualizações.
 * [Seaborn](https://seaborn.pydata.org/) - Uma biblioteca de visualização de dados baseada em matplotlib que fornece uma interface de alto nível para criar gráficos estatísticos atraentes e informativos.
 
+- Caso ainda não tenha obtido suas credencias na API do reddit pode conseguir através desse link: [https://old.reddit.com/prefs/apps/](https://old.reddit.com/prefs/apps/)
+
 ## 📋 Observações
 
 Mesmo com o alto valor de resultados zeros (comentarios com emojis, simbolos, links, entre outros) podemos perceber com base no gráfico se os usuários estão gostando ou não de uma determinada postagem, resultados maiores que 0 estão felizes e menores que 0 não estão felizes
