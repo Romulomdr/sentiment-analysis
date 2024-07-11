@@ -29,6 +29,6 @@ Segue abaixo um exemplo:
   
 ## ✒️ Autor
 
-* [**Romulo Matheus**](https://gist.github.com/Romulomdr) - *Atualmente desenvolvedor Java back-end e suporte a ambientes Moodle* [<img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />](https://www.linkedin.com/in/romulo-dantasmdr/)
+* [**Romulo Matheus**](https://github.com/Romulomdr) - *Atualmente desenvolvedor Java back-end e suporte a ambientes Moodle* [<img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />](https://www.linkedin.com/in/romulo-dantasmdr/)
 
 - 😁 Agradeço a todos pela atenção.
