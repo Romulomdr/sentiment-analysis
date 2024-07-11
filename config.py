@@ -1,0 +1,3 @@
+CLIENTE_ID = ""
+CLIENT_SECRET = ""
+USER_AGENT = ""
